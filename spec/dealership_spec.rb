@@ -15,4 +15,18 @@ describe(Vehicle) do
       expect(test_vehicle.model()).to(eq('Prius'))
     end
   end
+
+  describe('#year') do
+    it('will return the year of a vehicle') do
+      test_vehicle = Vehicle.new('Toyota', 'Prius', 2015, 'white')
+      expect(test_vehicle.year()).to(eq(2015))
+    end
+  end
+
+  # describe('#color') do
+  #   it('will return the model of a vehicle') do
+  #     test_vehicle = Vehicle.new('Toyota', 'Prius', 2015, 'white')
+  #     expect(test_vehicle.model()).to(eq('Prius'))
+  #   end
+  # end
 end
