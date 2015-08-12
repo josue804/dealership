@@ -1,4 +1,26 @@
+html {
+  background: url("http://www.cliparthut.com/clip-arts/624/cartoon-cars-clip-art-624807.png") repeat center center fixed;
+  padding: 20px;
+
+}
+
 p {
+  color: #000000;
+}
+
+body {
+  background: rgba(100,100,100,.9);
+}
+
+.container {
+  padding: 10px;
+}
+
+label {
+  color: #000000;
+}
+
+input {
   color: #000000;
 }
 
