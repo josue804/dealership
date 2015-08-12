@@ -31,4 +31,8 @@ class Dealership
     @@dealerships
   end
 
+  define_singleton_method(:find) do |id|
+    @@dealerships[id - 1]
+  end
+
 end
