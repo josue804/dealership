@@ -44,4 +44,14 @@ describe(Vehicle) do
       expect(Vehicle.clear()).to(eq([]))
     end
   end
+
+  describe('.all') do
+    it('will displays all vehicles in the array') do
+      test_vehicle = Vehicle.new('Toyota', 'Prius', 2015, 'white')
+      test_vehicle2 = Vehicle.new('Chrysler', 'Pacifica', 2006, 'white')
+      test_vehicle.save()
+      test_vehicle2.save()
+      expect(Vehicle.all()).to(eq([test_vehicle, test_vehicle2]))
+    end
+  end
 end

@@ -31,4 +31,8 @@ class Vehicle
   define_singleton_method(:clear) do
     @@vehicles = []
   end
+
+  define_singleton_method(:all) do
+    @@vehicles
+  end
 end
