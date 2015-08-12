@@ -23,10 +23,10 @@ describe(Vehicle) do
     end
   end
 
-  # describe('#color') do
-  #   it('will return the model of a vehicle') do
-  #     test_vehicle = Vehicle.new('Toyota', 'Prius', 2015, 'white')
-  #     expect(test_vehicle.model()).to(eq('Prius'))
-  #   end
-  # end
+  describe('#color') do
+    it('will return the color of a vehicle') do
+      test_vehicle = Vehicle.new('Toyota', 'Prius', 2015, 'white')
+      expect(test_vehicle.color()).to(eq('white'))
+    end
+  end
 end

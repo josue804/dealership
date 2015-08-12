@@ -19,4 +19,8 @@ class Vehicle
   define_method(:year) do
     @year
   end
+
+  define_method(:color) do
+    @color
+  end
 end
