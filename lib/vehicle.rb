@@ -25,6 +25,10 @@ class Vehicle
     @color
   end
 
+  define_method(:paint_car) do |new_color|
+    @color = new_color
+  end
+
   define_method(:save) do
     @@vehicles.push(self)
   end

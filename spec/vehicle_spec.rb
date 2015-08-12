@@ -34,6 +34,13 @@ describe(Vehicle) do
     end
   end
 
+  describe('#paint_car') do
+    it('will change the color of a vehicle') do
+      test_vehicle = Vehicle.new('Toyota', 'Prius', 2015, 'white')
+      expect(test_vehicle.paint_car('brown')).to(eq('brown'))
+    end
+  end
+
   describe('#save') do
     it('will save a vehicle onto an array of vehicles') do
       test_vehicle = Vehicle.new('Toyota', 'Prius', 2015, 'white')
