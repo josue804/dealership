@@ -16,4 +16,11 @@ describe(Dealership) do
     end
   end
 
+  describe('#cars') do
+    it('will return the car array') do
+      test_dealership = Dealership.new("Bob's Car Lot")
+      expect(test_dealership.cars()).to(eq([]))
+    end
+  end
+
 end
