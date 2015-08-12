@@ -23,4 +23,11 @@ describe(Dealership) do
     end
   end
 
+  describe('#save') do
+    it('will save a new dealership') do
+      test_dealership = Dealership.new("Bob's Car Lot")
+      expect(test_dealership.save()).to(eq([test_dealership]))
+    end
+  end
+
 end

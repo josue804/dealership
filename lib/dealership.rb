@@ -19,4 +19,8 @@ class Dealership
     @cars
   end
 
+  define_method(:save) do
+    @@dealerships.push(self)
+  end
+
 end
