@@ -23,4 +23,8 @@ class Vehicle
   define_method(:color) do
     @color
   end
+
+  define_method(:save) do
+    @@vehicles.push(self)
+  end
 end

@@ -29,4 +29,11 @@ describe(Vehicle) do
       expect(test_vehicle.color()).to(eq('white'))
     end
   end
+
+  describe('#save') do
+    it('will save a vehicle onto an array of vehicles') do
+      test_vehicle = Vehicle.new('Toyota', 'Prius', 2015, 'white')
+      expect(test_vehicle.save()).to(eq([test_vehicle]))
+    end
+  end
 end
