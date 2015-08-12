@@ -1,0 +1,9 @@
+<h1>Vehicle Info!</h1>
+
+<p><%= @vehicle.make() %><br>
+   <%= @vehicle.model() %><br>
+   <%= @vehicle.year() %><br>
+   <%= @vehicle.color() %>
+</p>
+
+<a href="/dealerships/<%= @dealership %>">Back to <%= Dealership.find(@dealership).name() %></a>
