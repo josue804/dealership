@@ -17,29 +17,10 @@ a:hover, html {
   cursor: url(http://cur.cursors-4u.net/mechanics/mec-2/mec163.cur), progress !important;
 }
 
-button {
-  background: url(http://res.freestockphotos.biz/pictures/15/15685-illustration-of-a-red-cartoon-car-pv.png) 30px 20px no-repeat;
-}
-
 button:hover {
   cursor: url(http://cur.cursors-4u.net/mechanics/mec-2/mec163.cur), progress !important;
 }
 
 input:hover {
   cursor: url(http://cur.cursors-4u.net/mechanics/mec-2/mec163.cur), progress !important;
-}
-
-.contain-car {
-  margin-top: 100px;
-  animation: drive 4s steps(4, end) infinite;
-}
-
-.contain-car-2 {
-  animation: drive 4s steps(4, start) infinite;
-}
-
-@keyframes drive {
-  to {
-    transform: translateX(640px);
-  }
 }
