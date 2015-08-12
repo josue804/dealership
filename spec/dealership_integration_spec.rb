@@ -16,4 +16,12 @@ describe('add, remove, and display dealership cars', {:type => :feature}) do
     click_button('Add!')
     expect(page).to have_content('Your form has been submitted')
   end
+
+  it('will display list of added dealerships') do
+    visit('/dealerships/new')
+    fill_in('name', :with => "Vin's Vehicles")
+    click_button('Add!')
+    click_link('Click here to view dealerships!')
+    expect(page).to have_content("Vin's Vehicles")
+  end
 end
